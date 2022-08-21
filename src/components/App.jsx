@@ -1,9 +1,9 @@
-
-import { Wrapper } from "./Wrapper/Wrapper";
+import Feedback from './Feedback/Feedback';
 
 export const App = () => {
   return (
-    <Wrapper>
-    </Wrapper>
+    <>
+      <Feedback />
+    </>
   );
 };
