@@ -13,7 +13,7 @@ export const Button = ({ img, title,onClick }) => {
 };
 
 Button.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   img: PropTypes.string,
-
+  onClick: PropTypes.func.isRequired,
 };

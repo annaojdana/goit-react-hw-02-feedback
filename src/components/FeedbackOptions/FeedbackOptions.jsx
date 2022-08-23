@@ -4,7 +4,7 @@ import goodImg from '../../images/good.png';
 import neutralImg from '../../images/neutral.png';
 import badImg from '../../images/bad.png';
 import React from 'react';
-
+import PropTypes from 'prop-types';
 class FeedbackOptions extends React.Component {
   render() {
     const { options, onLeaveFeedback } = this.props;
@@ -38,3 +38,7 @@ class FeedbackOptions extends React.Component {
 }
 
 export default FeedbackOptions;
+FeedbackOptions.propTypes = {
+  options: PropTypes.array.isRequired,
+  onLeaveFeedback: PropTypes.func.isRequired,
+};
